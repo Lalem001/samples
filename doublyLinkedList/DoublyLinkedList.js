@@ -192,6 +192,11 @@ DoublyLinkedList.prototype = {
         }
     },
 
+    /**
+     * Copy the list to a new array.
+     * @method toArray
+     * @returns {Array}
+     */
     toArray: function () {
         'use strict';
         var arr = [];
