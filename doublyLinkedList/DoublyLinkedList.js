@@ -55,7 +55,6 @@ function DoublyLinkedList() {
 DoublyLinkedList.prototype = {
     /**
      * Add a new Node at the end of the DoublyLinkedList.
-     * Alias
      * @method push
      * @param content
      * @returns {DoublyLinkedList}
