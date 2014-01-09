@@ -8,14 +8,14 @@ $(document).ready(function () {
         strictEqual(node.next, 'next');
     });
 
-    test('DoublyLinkedList Constructor', function () {
+    test('LinkedList Constructor', function () {
         var list = new LinkedList();
 
         strictEqual(list._length, 0);
         strictEqual(list._top, undefined);
     });
 
-    test('DoublyLinkedList Push', function () {
+    test('LinkedList Push', function () {
         var list = new LinkedList();
 
         list.push(1);
@@ -34,7 +34,7 @@ $(document).ready(function () {
         strictEqual(list._top.next.content, 2);
     });
 
-    test('DoublyLinkedList chain Push', function () {
+    test('LinkedList chain Push', function () {
         var list = new LinkedList();
 
         list.push(1).push(2).push(3);
@@ -44,7 +44,7 @@ $(document).ready(function () {
         strictEqual(list._top.next.next.content, 1);
     });
 
-    test('DoublyLinkedList Pop', function () {
+    test('LinkedList Pop', function () {
         var list = new LinkedList(),
             result;
 
