@@ -86,5 +86,35 @@ LinkedList.prototype = {
             this._length -= 1;
             return node.content;
         }
+    },
+
+    /**
+     * Execute the provided callback for each node in this LinkedList
+     * @method forEach
+     * @param callback {function}
+     * @param [thisArg]
+     */
+    forEach: function (callback, thisArg) {
+        'use strict';
+        if (this._length > 0) {
+            var index = 0,
+                length = this._length,
+                breaker = false,
+                node = this._top;
+            while (index < length) {
+                if (callback.call(thisArg, node.content, index, this) === breaker) { break; }
+                node = node.next;
+                index += 1;
+            }
+        }
+    },
+
+    toArray: function () {
+        'use strict';
+        var arr = [];
+        this.forEach(function (content) {
+            arr.push(content);
+        });
+        return arr;
     }
 };

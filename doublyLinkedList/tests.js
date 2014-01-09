@@ -201,4 +201,16 @@ $(document).ready(function () {
         strictEqual(result[1], 8);
         strictEqual(result[2], 9);
     });
+
+    test('DoublyLinkedList toArray', function () {
+        var list = new DoublyLinkedList(),
+            result;
+
+        list.push(1).push(2).push(3);
+        result = list.toArray();
+        strictEqual(result.length, 3);
+        strictEqual(result[0], 1);
+        strictEqual(result[1], 2);
+        strictEqual(result[2], 3);
+    });
 });

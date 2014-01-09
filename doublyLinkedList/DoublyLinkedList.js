@@ -190,5 +190,14 @@ DoublyLinkedList.prototype = {
                 length -= 1;
             }
         }
+    },
+
+    toArray: function () {
+        'use strict';
+        var arr = [];
+        this.forEach(function (content) {
+            arr.push(content);
+        });
+        return arr;
     }
 };
