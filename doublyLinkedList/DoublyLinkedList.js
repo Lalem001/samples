@@ -54,7 +54,7 @@ function DoublyLinkedList() {
 
 DoublyLinkedList.prototype = {
     /**
-     * Add a new Node at the end of the DoublyLinkedList.
+     * Add a new Node at the end of the list.
      * @method push
      * @param content
      * @returns {DoublyLinkedList}
@@ -79,7 +79,7 @@ DoublyLinkedList.prototype = {
     },
 
     /**
-     * Add a new Node at the beginning of the DoublyLinkedList.
+     * Add a new Node at the beginning of the list.
      * @method unshift
      * @param content
      * @returns {DoublyLinkedList}
@@ -104,7 +104,7 @@ DoublyLinkedList.prototype = {
     },
 
     /**
-     * Remove the last Node of the DoublyLinkedList, and return that Node.
+     * Remove the last Node of the list, and return that Node.
      * @method pop
      * @returns {Node|undefined}
      */
@@ -128,7 +128,7 @@ DoublyLinkedList.prototype = {
     },
 
     /**
-     * Remove the first Node of the DoublyLinkedList, and return that Node.
+     * Remove the first Node of the list, and return that Node.
      * @method shift
      * @returns {Node|undefined}
      */
@@ -152,7 +152,7 @@ DoublyLinkedList.prototype = {
     },
 
     /**
-     * Execute the provided callback for each node in this DoublyLinkedList
+     * Execute the provided callback for each node in this list
      * @method forEach
      * @param callback {function}
      * @param [thisArg]
@@ -173,7 +173,7 @@ DoublyLinkedList.prototype = {
     },
 
     /**
-     * Execute the provided callback for each node in this DoublyLinkedList, starting from the tail
+     * Execute the provided callback for each node in this list, starting from the tail
      * @method forEach
      * @param callback {function}
      * @param [thisArg]

@@ -43,7 +43,7 @@ function LinkedList() {
 
 LinkedList.prototype = {
     /**
-     * Add a new Node at the top of the LinkedList.
+     * Add a new Node at the top of the list.
      * @method push
      * @param content
      * @returns {LinkedList}
@@ -61,7 +61,7 @@ LinkedList.prototype = {
     },
 
     /**
-     * Returns the content at the top of the LinkedList without removing it.
+     * Returns the content at the top of the list without removing it.
      * @method peek
      * @returns {Node|undefined}
      */
@@ -71,7 +71,7 @@ LinkedList.prototype = {
     },
 
     /**
-     * Remove the top Node of the LinkedList, and return that Node.
+     * Remove the top Node of the list, and return that Node.
      * @method pop
      * @returns {Node|undefined}
      */
@@ -89,7 +89,7 @@ LinkedList.prototype = {
     },
 
     /**
-     * Execute the provided callback for each node in this LinkedList
+     * Execute the provided callback for each node in this list
      * @method forEach
      * @param callback {function}
      * @param [thisArg]
