@@ -121,5 +121,17 @@ LinkedList.prototype = {
             arr.push(content);
         });
         return arr;
+    },
+
+    /**
+     * Remove all nodes from the list
+     * @method clear
+     * @returns {DoublyLinkedList}
+     * @chainable
+     */
+    clear: function () {
+        'use strict';
+        while(this._length) { this.pop(); }
+        return this;
     }
 };

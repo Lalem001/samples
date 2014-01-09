@@ -103,4 +103,14 @@ $(document).ready(function () {
         strictEqual(result[1], 2);
         strictEqual(result[2], 1);
     });
+
+    test('LinkedList clear', function () {
+        var list = new LinkedList();
+
+        list.push(1).push(2).push(3);
+        list.clear();
+        strictEqual(list._length, 0);
+        strictEqual(list._head, undefined);
+        strictEqual(list._tail, undefined);
+    });
 });
