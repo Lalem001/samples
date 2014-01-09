@@ -20,5 +20,26 @@
     "indent"    : 4,
     "quotmark"  : true,
 
-    "browser"   : true
+    "browser"   : true,
+
+    "globals": [
+        "QUnit",
+        "module",
+        "test",
+        "asyncTest",
+        "expect",
+        "start",
+        "stop",
+        "ok",
+        "equal",
+        "notEqual",
+        "deepEqual",
+        "notDeepEqual",
+        "strictEqual",
+        "notStrictEqual",
+        "throws",
+
+        "jQuery",
+        "$"
+    ]
 }
