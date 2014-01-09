@@ -1,5 +1,9 @@
 {
   "name": "samples",
+  "description": "Miscellaneous code samples",
+  "authors": [
+    {"name": "Luis Aleman"}
+  ],
   "ignore": [
     "**/.*",
     "node_modules"
