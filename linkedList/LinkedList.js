@@ -126,7 +126,7 @@ LinkedList.prototype = {
     /**
      * Remove all nodes from the list
      * @method clear
-     * @returns {DoublyLinkedList}
+     * @returns {LinkedList}
      * @chainable
      */
     clear: function () {
