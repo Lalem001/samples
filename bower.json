@@ -1,0 +1,12 @@
+{
+  "name": "samples",
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ],
+  "private": true,
+  "devDependencies": {
+    "jquery": "~2.0.3",
+    "qunit": "~1.12.0"
+  }
+}

@@ -33,6 +33,9 @@
 # Node.js
 node_modules
 
+# Bower
+bower_components
+
 #IntelliJ Editors (Webstorm, PyCharm, etc.)
 *.iml
 *.ipr
