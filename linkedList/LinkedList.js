@@ -51,7 +51,7 @@ LinkedList.prototype = {
      */
     push: function (content) {
         'use strict';
-        // Create new node, where next is undefined, and previous is _tail
+        // Create new node, where next is undefined
         this._top = new Node(content, this._top);
 
         // No matter the content, this method will always add a Node
