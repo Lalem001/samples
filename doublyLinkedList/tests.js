@@ -93,7 +93,6 @@ $(document).ready(function () {
         strictEqual(result, undefined);
         strictEqual(list._head, undefined);
         strictEqual(list._tail, undefined);
-
     });
 
     test('DoublyLinkedList Shift', function () {
