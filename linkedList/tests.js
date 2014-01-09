@@ -77,4 +77,18 @@ $(document).ready(function () {
         strictEqual(result, undefined);
         strictEqual(list._top, undefined);
     });
+
+    test('LinkedList forEach', function () {
+        var list = new LinkedList(),
+            result = [];
+
+        list.push(1).push(2).push(3);
+        list.forEach(function (content) {
+            result.push(content);
+        });
+        strictEqual(result.length, 3);
+        strictEqual(result[0], 3);
+        strictEqual(result[1], 2);
+        strictEqual(result[2], 1);
+    });
 });
