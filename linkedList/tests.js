@@ -44,6 +44,16 @@ $(document).ready(function () {
         strictEqual(list._top.next.next.content, 1);
     });
 
+    test('linkedList Peek', function () {
+        var list = new LinkedList(),
+            result;
+
+        list.push(1);
+        result = list.peek();
+        strictEqual(list._length, 1);
+        strictEqual(result, 1);
+    });
+
     test('LinkedList Pop', function () {
         var list = new LinkedList(),
             result;
